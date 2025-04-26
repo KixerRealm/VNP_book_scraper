@@ -105,11 +105,11 @@ for book_url in literatura_books_list:
     except:
         print("No <ul> found inside card-body!")
 
-
+    #print(book_details)
     book =  {
         "Наслов" : title.text,
         "Опис" : description,
-        "Категорија" : book_details["Категорија"] if book_details.__contains__("Категорија") else "",
+        "Kатегорија" : book_details["Kатегорија"] if book_details.__contains__("Kатегорија") else "",
         "Автор" : book_details["Автор"] if book_details.__contains__("Автор") else "",
         "Издавач" : book_details["Издавач"] if book_details.__contains__("Издавач") else "",
         "Година" : book_details["Година на објавување"] if book_details.__contains__("Година на објавување") else "",
